@@ -12,4 +12,16 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	
+	<servlet>
+	    <servlet-name>WxPayResultService</servlet-name>
+	    <servlet-class>wxpay.WxPayResultService</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  	</servlet>
+  	
+  	<servlet-mapping>
+    <servlet-name>WxPayResultService</servlet-name>
+    <url-pattern>/wxorder/result</url-pattern>
+  </servlet-mapping>
+	
 </web-app>

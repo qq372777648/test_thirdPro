@@ -61,6 +61,7 @@ public class QrcodeTest {
       public static void main(String[] args) throws Exception {  
           long start = System.currentTimeMillis();  
           String string = "https://qr.alipay.com/bax08554lmvmwtmgkfgo8080";  
+          string="weixin://wxpay/bizpayurl?pr=iZaX5ib";
           QrcodeTest.create_image(string);  
              long end = System.currentTimeMillis();  
              long last = end  - start;  

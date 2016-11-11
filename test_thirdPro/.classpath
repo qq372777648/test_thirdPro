@@ -12,7 +12,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/alipay-sdk-java20160302220055.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/alipay-trade-sdk-source.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/alipay-trade-sdk.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/commons-configuration-1.10.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/commons-logging-1.1.1.jar"/>
@@ -22,5 +21,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/qrcode/QRCode.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aliyun-opensearch-java-sdk-v2.1.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mongo-java-driver-3.2.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/commons-codec-1.10.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
