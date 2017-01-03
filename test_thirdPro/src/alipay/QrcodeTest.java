@@ -62,6 +62,9 @@ public class QrcodeTest {
           long start = System.currentTimeMillis();  
           String string = "https://qr.alipay.com/bax08554lmvmwtmgkfgo8080";  
           string="weixin://wxpay/bizpayurl?pr=iZaX5ib";
+          string="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx810701ac2de85f26&redirect_uri=http://if2.zhenxian.fm/interfacetest2/wx/wxQrCallback&response_type=code&scope=snsapi_userinfo&state=1479974363353BAND47285806-21fb-3939-ba72-f2f6cc8c70a8#wechat_redirect";
+          string="https://h5.koudaitong.com/v2/goods/1yjzjzus4buly";
+          
           QrcodeTest.create_image(string);  
              long end = System.currentTimeMillis();  
              long last = end  - start;  

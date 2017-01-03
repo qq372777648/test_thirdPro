@@ -28,9 +28,9 @@ public class main {
 //				"    \"timeout_express\":\"90m\"," +
 //				"  }");//设置业务参数
 				
-				String out_trade_no = 100009+"";
-		        String total_amount = "0.1";
-		        String subject = "subject标题";
+				String out_trade_no = 100230095+"";
+		        String total_amount = "0.03";
+		        String subject = "subject标题2";
 		        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		        String time_expire= sdf.format(System.currentTimeMillis()+24*60*60*1000);
 		        

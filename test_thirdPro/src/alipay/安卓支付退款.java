@@ -11,7 +11,7 @@ import com.alipay.api.response.AlipayTradeRefundResponse;
 * @Description: 
 * @version V1.0   
 */
-public class 退款 {
+public class 安卓支付退款 {
 	public static void main(String[] args) throws AlipayApiException {
 		AlipayClient alipayClient = AlipayAPIClientFactory.getAlipayClient();
 				AlipayTradeRefundRequest request = new AlipayTradeRefundRequest();//创建API对应的request类
