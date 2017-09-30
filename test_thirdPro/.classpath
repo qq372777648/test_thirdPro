@@ -24,5 +24,10 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/alipay/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/MessageQueueTcp/ons-client-1.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/zhima/commons-logging-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/zhima/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/zhima/zmxy-sdk-java-20170919191404-source.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/zhima/zmxy-sdk-java-20170919191404.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/zhima/fastjson-1.2.38.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -26,17 +26,17 @@ public class mongoDbTest2 {
 		MongoClient mongoClient=null;
         try {  
             //ServerAddress()两个参数分别为 服务器地址 和 端口  
-            ServerAddress serverAddress = new ServerAddress("localhost",27017);  
+            ServerAddress serverAddress = new ServerAddress("139.162.80.167",27017);  
             List<ServerAddress> addrs = new ArrayList<ServerAddress>();  
             addrs.add(serverAddress);  
               
             //MongoCredential.createScramSha1Credential()三个参数分别为 用户名 数据库名称 密码  
-            MongoCredential credential = MongoCredential.createScramSha1Credential("root", "admin", "root".toCharArray());
+            MongoCredential credential = MongoCredential.createScramSha1Credential("lzw", "admin", "root".toCharArray());
             List<MongoCredential> credentials = new ArrayList<MongoCredential>();  
             credentials.add(credential);  
               
-            //通过连接认证获取MongoDB连接  
-//            mongoClient = new MongoClient(addrs,credentials);  
+//            通过连接认证获取MongoDB连接  
+            mongoClient = new MongoClient(addrs,credentials);  
             
          // 连接到 mongodb 服务（无密码连接)
 //          mongoClient = new MongoClient("localhost", 27017);
@@ -48,7 +48,7 @@ public class mongoDbTest2 {
 
               
             //连接到数据库  
-            MongoDatabase mongoDatabase = mongoClient.getDatabase("test2");  
+            MongoDatabase mongoDatabase = mongoClient.getDatabase("test3");  
             System.out.println("Connect to database successfully");  
             
             //集合创建
@@ -98,7 +98,7 @@ public class mongoDbTest2 {
             
             
           //更新文档   将文档中likes=100的文档修改为likes=200   
-            collection2.updateMany(Filters.eq("likes", 2100), new Document("$set",new Document("likes",500)));  
+            collection2.updateMany(Filters.eq("likes", 300), new Document("$set",new Document("likes",500)));  
             //检索查看结果  
             findIterable = collection2.find();  
             mongoCursor = findIterable.iterator();  
@@ -113,6 +113,7 @@ public class mongoDbTest2 {
             //删除所有符合条件的文档  
             collection.deleteMany (Filters.eq("likes", 300));  
             //检索查看结果  
+            System.out.println("删除后遍历");
             findIterable = collection.find();  
             mongoCursor = findIterable.iterator();  
             while(mongoCursor.hasNext()){  
